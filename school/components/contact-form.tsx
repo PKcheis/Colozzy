@@ -56,7 +56,7 @@ export default function ContactForm() {
           <Button type="submit" className="w-full">Send Message</Button>
           {showNotification && (
             <div className="mt-4 p-2 bg-green-100 text-green-700 rounded">
-              Form submitted! We'll get back to you soon.
+              Form submitted! We&ll get back to you soon.
             </div>
           )}
         </form>
