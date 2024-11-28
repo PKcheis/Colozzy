@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 
-export default function Header() {
+export default function header() {
   // State to manage the mobile menu toggle
   const [menuOpen, setMenuOpen] = useState(false)
 

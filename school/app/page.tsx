@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Header from '@/components/header'
+import header from '@/components/header'
 import Hero from '@/components/hero'
 import Features from '@/components/features'
 import CoursePricing from '@/components/course-pricing'
@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Pass the dark mode toggle function down to the Header component */}
-      <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+      <header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       <main className="flex-grow">
         <Hero />
         <Features />
