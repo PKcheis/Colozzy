@@ -1,5 +1,14 @@
 import type { Config } from "tailwindcss";
 
+module.exports = {
+	darkMode: 'class', // Enable class-based dark mode
+	theme: {
+	  extend: {},
+	},
+	plugins: [],
+  }
+  
+
 const config: Config = {
     darkMode: ["class"],
     content: [
