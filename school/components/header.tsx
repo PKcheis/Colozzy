@@ -1,3 +1,6 @@
+// Add this line at the very top of your header.tsx file
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
