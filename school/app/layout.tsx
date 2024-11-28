@@ -1,9 +1,9 @@
 // In your layout.tsx or page.tsx
-"use client";
+'use client';
+import { useEffect, useState } from 'react';
 
 import localFont from "next/font/local";
 import "./globals.css";
-import { useEffect, useState } from "react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
