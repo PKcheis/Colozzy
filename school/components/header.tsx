@@ -7,9 +7,11 @@ export default function Header() {
     <header className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center flex-wrap">
         {/* Logo and Title */}
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2 sm:space-x-4">
           <Image src="/logo1.png" alt="logo" width={40} height={40} />
-          <span className="text-2xl font-bold hidden sm:block">Colozzy Data Analytic and Research Solution</span>
+          <span className="text-xl sm:text-2xl font-bold truncate max-w-xs sm:max-w-full">
+            Colozzy Data Analytic and Research Solution
+          </span>
         </Link>
 
         {/* Navigation Menu */}
