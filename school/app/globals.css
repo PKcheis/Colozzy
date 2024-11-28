@@ -2,27 +2,10 @@
 @tailwind components;
 @tailwind utilities;
  /* Global Styles */
-:root {
-  --primary-bg: #ffffff; /* Light Mode Background */
-  --primary-text: #000000; /* Light Mode Text */
-}
-
-html {
-  --primary-bg: #2c2c2c; /* Dark Mode Background */
-  --primary-text: #ffffff; /* Dark Mode Text */
-}
-
-body {
-  background-color: var(--primary-bg);
-  color: var(--primary-text);
-}
-
-button {
-  background-color: #6c63ff;
-  color: white;
-}
 @layer base {
   :root {
+    --primary-bg: #ffffff; /* Light Mode Background */
+    --primary-text: #000000; /* Light Mode Text */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -59,3 +42,17 @@ button {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-pink-600;
 }
 
+html {
+  --primary-bg: #2c2c2c; /* Dark Mode Background */
+  --primary-text: #ffffff; /* Dark Mode Text */
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+button {
+  background-color: #6c63ff;
+  color: white;
+}
