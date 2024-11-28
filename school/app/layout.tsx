@@ -1,7 +1,6 @@
 // In your layout.tsx or page.tsx
 "use client";
 
-import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { useEffect, useState } from "react";
