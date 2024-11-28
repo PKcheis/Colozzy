@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- /* Global Styles */
+
+/* Global Styles */
 @layer base {
   :root {
     --primary-bg: #ffffff; /* Light Mode Background */
@@ -27,6 +28,31 @@
     --ring: 270 70% 40%;
     --radius: 0.5rem;
   }
+
+  /* Dark Mode Variables */
+  .dark {
+    --primary-bg: #2c2c2c; /* Dark Mode Background */
+    --primary-text: #ffffff; /* Dark Mode Text */
+    --background: 0 0% 10%;
+    --foreground: 222.2 50% 9.9%;
+    --card: 0 0% 20%;
+    --card-foreground: 222.2 85% 18%;
+    --popover: 0 0% 20%;
+    --popover-foreground: 222.2 85% 18%;
+    --primary: 220 50% 45%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 222.2 47.4% 80.2%;
+    --muted: 210 40% 30.1%;
+    --muted-foreground: 215.4 16.3% 66.9%;
+    --accent: 220 20% 25%;
+    --accent-foreground: 222.2 47.4% 85.2%;
+    --destructive: 0 50% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 40%;
+    --input: 214.3 31.8% 50%;
+    --ring: 220 70% 50%;
+  }
 }
 
 /* Custom gradients and transitions */
@@ -43,16 +69,24 @@
 }
 
 html {
-  --primary-bg: #2c2c2c; /* Dark Mode Background */
-  --primary-text: #ffffff; /* Dark Mode Text */
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 body {
   background-color: var(--primary-bg);
   color: var(--primary-text);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 button {
   background-color: #6c63ff;
   color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Smooth Transition for Dark Mode Toggle */
+html {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
