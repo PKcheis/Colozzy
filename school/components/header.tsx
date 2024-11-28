@@ -7,7 +7,7 @@ export default function Header() {
     <header className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logo.png" alt="RailData Institute Logo" width={40} height={40} />
+          <Image src="/logo.png" alt="Logo" width={40} height={40} />
           <span className="text-2xl font-bold">Colozzy Data Analytic and Research Solution</span>
         </Link>
         <nav>
